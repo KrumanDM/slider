@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background: #090909;
+				color: #eee;
+			}
+			#wrapper{
+				max-width: 500px;
+				margin: 0 auto;
+			}
+			img{
+				max-width: 100%;
+				height:auto;
+			}
+		</style>
+		<link rel="stylesheet" href="slick.css" />
+		<link rel="stylesheet" href="slick-theme.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Кодим слайдер</h1>
+			<div id="slider">
+				<img src="image-1.jpg">
+				<img src="image-2.jpg">
+				<img src="image-3.jpg">
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="slick.min.js"></script>
+		<script>
+			jQuery( function( $ ) {
+				$('#slider').slick( {
+					infinite: false,
+					dots: true
+				});
+			} );
+		</script>
+
+	</body>
+</html>
